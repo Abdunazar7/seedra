@@ -1,0 +1,17 @@
+export { default as InstagramIcon } from "./Instagram.icon";
+export { default as FacebookIcon } from "./Facebook.icon";
+export { default as SearchIcon } from "./Search.icon";
+export { default as HeartIcon } from "./Heart.icon";
+export { default as CartIcon } from "./Cart.icon";
+export { default as LogoIcon } from "./Logo.icon";
+export { default as Leaf } from "./Leaf";
+export { default as Cards } from "./Cards";
+export { default as Herb } from "./Herb";
+export { default as Tomato } from "./Tomato";
+export { default as Suplies } from "./Supplies";
+export { default as Flower } from "./Flower";
+export { default as Fruit } from "./Fruit";
+export { default as Flame } from "./Flame";
+export { default as Star } from "./Star";
+export { default as Star2 } from "./Star2";
+export { default as Clock } from "./Clock";

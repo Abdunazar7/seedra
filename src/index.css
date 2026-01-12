@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1242px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.testimonial-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+  bottom: 0 !important;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 24px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #EFEFEF !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  width: 32px;
+  background-color: #359740 !important;
+}
