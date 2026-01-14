@@ -34,3 +34,17 @@
   width: 32px;
   background-color: #359740 !important;
 }
+
+/* index.css faylida */
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* IE and Edge */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+  }
+}

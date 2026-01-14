@@ -45,7 +45,7 @@ function Testimonials() {
       <div>
         <Swiper
           modules={[Pagination, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={3}
           centeredSlides={true}
           pagination={{
@@ -55,14 +55,30 @@ function Testimonials() {
             autoplay: 5000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.1,
+              spaceBetween: 16,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+              centeredSlides: false,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              centeredSlides: true,
+            },
+          }}
           className="testimonial-swiper overflow-visible"
         >
           {MOCK_DATA.map((item) => (
-            <SwiperSlide key={item.id} className="py-4">
+            <SwiperSlide key={item.id}>
               {({ isActive }) => (
                 <div
                   className={`
-                    transition-all duration-300 ease-in-out rounded-[24px] p-8 h-full flex flex-col border
+                    transition-all duration-300 ease-in-out rounded-[24px] p-8 h-full flex flex-col border w-[318px] h-[344px]
                     ${
                       isActive
                         ? "bg-white border-[#EAF1EB] shadow-xl opacity-100 scale-100"

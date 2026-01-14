@@ -1,18 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import Catalog from "../components/Catalog";
-import ProductCards from "../components/ProductCards";
-import Blog from "../components/Blog";
-import Information from "../components/Info";
-import Testimonials from "../components/Testimonials";
-import Hero from "../components/Hero";
+import Catalog from "../../components/Catalog";
+import ProductCards from "../../components/ProductCards";
+import Information from "../../components/Info";
+import Testimonials from "../../components/Testimonials";
+import Hero from "../../components/Hero";
+import BlogSection from "./components/BlogSection";
 
 function Home() {
   return (
     <div className="container flex flex-col gap-6">
-
-    <Hero/>
+      <Hero />
 
       <section>
         <div className="bg-[#FFE62E17] py-6 px-10 rounded-[20px] flex flex-col items-center text-center">
@@ -48,7 +47,7 @@ function Home() {
         </NavLink>
       </section>
 
-      <Blog />
+      <BlogSection />
       <Testimonials />
       <Information />
     </div>

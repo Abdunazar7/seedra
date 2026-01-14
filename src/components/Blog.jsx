@@ -6,7 +6,7 @@ import girl from "../assets/girl.png";
 
 function BlogGrid() {
   return (
-    <div className="w-full">
+    <div className="hidden lg:block w-full">
       <div className="grid grid-cols-3 grid-rows-2 gap-6 h-[650px]">
         <div className="col-span-2 relative rounded-[24px] bg-[#EAF1EB] p-10 overflow-hidden flex flex-col justify-center">
           <div className="relative z-10 max-w-[400px]">
@@ -72,7 +72,7 @@ function BlogGrid() {
           <img
             src={strawberry}
             alt="Strawberry"
-            className="absolute right-[-50px] bottom-[-30px] w-[200px] rounded-[50%]"
+            className="absolute right-[-40px] bottom-[-60px] w-[200px] h-[200px] rounded-full object-cover"
           />
         </div>
 
@@ -92,7 +92,7 @@ function BlogGrid() {
           <img
             src={strawberry}
             alt="Strawberry"
-            className="absolute right-[-50px] bottom-[-30px] w-[200px] rounded-[50%]"
+            className="absolute right-[-40px] bottom-[-60px] w-[200px] h-[200px] rounded-full object-cover"
           />
         </div>
       </div>
