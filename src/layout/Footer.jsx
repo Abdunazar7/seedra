@@ -3,10 +3,49 @@ import { NavLink } from "react-router-dom";
 import { FacebookIcon, InstagramIcon, LogoIcon } from "../components";
 
 function Footer() {
+  const linkClass =
+    "text-[#70737C] text-[14px] hover:text-[#359740] transition-colors";
+  const mainLinkClass =
+    "text-[#70737C] lg:text-[#359740] font-bold text-[14px] uppercase hover:text-[#359740] transition-colors";
+
   return (
     <footer className="w-full bg-white pt-10 pb-6 shadow-[0px_-4px_12px_rgba(0,0,0,0.05)]">
-      <div className="container">
-        <div className="flex items-center justify-between mb-8">
+      <div className="container px-4 mx-auto">
+
+        <div className="flex flex-col lg:hidden mb-10">
+
+          <div className="flex justify-center mb-8">
+            <NavLink to="/">
+              <LogoIcon className="h-7 w-auto" />
+            </NavLink>
+          </div>
+
+          <div className="grid grid-cols-2 gap-x-4 gap-y-6">
+
+            <div className="flex flex-col gap-4">
+              <NavLink to="/all-products" className={mainLinkClass}>
+                ALL PRODUCTS
+              </NavLink>
+              <NavLink to="/about" className={mainLinkClass}>
+                ABOUT SEEDRA
+              </NavLink>
+              <NavLink to="/blog" className={mainLinkClass}>
+                OUR BLOG
+              </NavLink>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <NavLink to="/terms" className={linkClass}>
+                Terms&Conditions
+              </NavLink>
+              <NavLink to="/privacy" className={linkClass}>
+                Privacy Policy
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="hidden lg:flex items-center justify-between mb-8">
           <ul className="flex items-center gap-5">
             <li>
               <NavLink
@@ -55,12 +94,12 @@ function Footer() {
           </ul>
         </div>
 
-        <hr className="border-none h-[1px] bg-[#EFEFEF] mb-6" />
+        <div className="w-full h-[1px] bg-[#EFEFEF] mb-6" />
 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4 text-[#359740]">
-            <InstagramIcon className="cursor-pointer" />
-            <FacebookIcon className="cursor-pointer" />
+            <InstagramIcon className="cursor-pointer hover:opacity-80 transition" />
+            <FacebookIcon className="cursor-pointer hover:opacity-80 transition" />
           </div>
 
           <div className="text-[#70737C] text-[14px]">All rights reserved</div>

@@ -15,3 +15,7 @@ export { default as Flame } from "./Flame";
 export { default as Star } from "./Star";
 export { default as Star2 } from "./Star2";
 export { default as Clock } from "./Clock";
+export { default as MenuIcon } from "./Menu.icon";
+export { default as ChevronDown } from "./ChevronDown";
+export { default as ChevronUp } from "./ChevronUp";
+export { default as RightArrow } from "./RightArrow";
